@@ -1,6 +1,6 @@
 
 #db variables
-db.conf
+keys.conf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
