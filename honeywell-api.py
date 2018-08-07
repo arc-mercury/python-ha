@@ -31,3 +31,6 @@ b64key = base64.b64encode(decodedstring)
 
 print b64key
 
+r = requests.get("https://api.honeywell.com/oauth2/token", headers={'Authorization':'Basic '+b64key, 'Content-Type':'application/x-www-form-urlencoded'}, data={'grant_type':'authorization_code','code':activekey})
+
+print(r.text)
