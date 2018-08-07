@@ -29,5 +29,4 @@ appsecret = config.get('HONEYWELL','apisecret')
 decodedstring = appkey+":"+appsecret
 b64key = base64.b64encode(decodedstring)
 
-print b64key
-
+r = requests.get('https://api.honeywell.com/oauth2/token', headers={
